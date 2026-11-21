@@ -1,0 +1,16 @@
+PASS | T1 Paddy irrigation retrieves cited water note
+PASS | T2 Cotton pest scouting retrieves cotton IPM note
+PASS | T3 Tomato soil retrieves soil/drainage advice
+PASS | T4 Paddy nutrient query retrieves nutrient note
+PASS | T5 Telugu question passes selected language to prompt
+PASS | T6 Covered tomato leaf-miner NSKE dose passes exact-match gate
+PASS | T7 Uncovered cotton dosage is refused by gate
+PASS | T8 Unknown pest escalates without a diagnosis
+PASS | Weak retrieval message is defined for escalation
+
+9/9 tests passed.
+
+Notes:
+- Ran locally with `python test_pipeline.py` after `pip install -r requirements.txt`.
+- These are deterministic retrieval/safety-gate tests (no live Groq/Supabase required).
+- Live Groq answer quality and Supabase persistence still need credentialed manual verification.
